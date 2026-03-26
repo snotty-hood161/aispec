@@ -31,3 +31,6 @@ workflow: _templates/rules-maintainer-workflow.md
 4. 执行核对：`skills/_templates/rules-maintainer-refs-template.md`
 5. 结构校验脚本：`scripts/validate_rules.sh`
 6. 语义校验脚本：`scripts/semantic_lint_rules.sh`
+
+## 输出要求（MUST）
+- 按 `agents/protocols/execution-trace.md` 格式，在输出末尾附执行追溯摘要（调用 Skill、任务类型、加载规则、跨域规则、跨域联动）。

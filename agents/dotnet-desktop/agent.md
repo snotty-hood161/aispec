@@ -36,6 +36,11 @@
 - WinForms profile：`rules/dotnet-desktop/profiles/winforms/`
 - 跨域规则：`rules/frontend-backend-collaboration.md`（涉及远程 API 时）
 
+## 关联 Protocols
+- 交接协议：`agents/protocols/handoff.md`
+- 输出格式：`agents/protocols/agent-output-format.md`
+- 执行追溯：`agents/protocols/execution-trace.md`
+
 ## 任务识别
 以下关键词/特征表明任务属于本 Agent：
 - WPF、MAUI、WinForms、桌面应用（C# 语境）
@@ -44,4 +49,5 @@
 
 ## 协作接口
 - 上游依赖：Collaboration Agent（API 契约）、GoServer / DotnetServer / PythonServer / JavaServer / NodeServer Agent（远程 API，按需）。
+- 下游消费：无（.NET 桌面为终端消费方）。
 - 冲突上报：Coordinator Agent。

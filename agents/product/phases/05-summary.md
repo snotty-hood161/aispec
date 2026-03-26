@@ -30,7 +30,7 @@
 
 ## 阶段输出
 
-使用 `agents/product/templates/prd-template.md` 模板输出完整 PRD。
+Product Agent 使用 `agents/product/templates/prd-template.md` 模板输出完整 PRD。
 
 ### 输出要求
 1. 所有输出使用中文。

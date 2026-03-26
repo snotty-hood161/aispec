@@ -33,6 +33,11 @@
 - 跨域仲裁：`rules/index.md`（数据库规则优先级最高）
 - 跨域协作：`rules/frontend-backend-collaboration.md`（Schema 变更影响 API 时）
 
+## 关联 Protocols
+- 交接协议：`agents/protocols/handoff.md`
+- 输出格式：`agents/protocols/agent-output-format.md`
+- 执行追溯：`agents/protocols/execution-trace.md`
+
 ## 任务识别
 以下关键词/特征表明任务属于本 Agent：
 - 建表、加字段、迁移脚本、schema、索引
@@ -42,4 +47,4 @@
 ## 协作接口
 - 上游依赖：无（Database Agent 始终最先执行）。
 - 下游消费：GoServer / DotnetServer / PythonServer / JavaServer / NodeServer Agent（数据模型）、Collaboration Agent（API 契约）。
-- 冲突仲裁：数据库规则在所有跨域冲突中拥有最高优先级。
+- 冲突上报：Coordinator Agent（数据库规则在所有跨域冲突中拥有最高优先级）。

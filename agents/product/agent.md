@@ -141,6 +141,9 @@ Product Agent 在多 Agent 调度链中处于**最前端**，位于所有其他 
 | 2 | GoServer / DotnetServer / PythonServer / JavaServer / NodeServer | 基于 Spec + Schema 开发 API |
 | 3 | Collaboration | 基于 Spec + API 对齐前后端契约 |
 | 4 | 客户端 | 基于 Design + API 契约开发 |
+| 4.5 | Security | 安全审计 |
+| 5 | QA | 质量保障 |
+| 6 | DevOps | 部署运维 |
 
 Product Agent 产出的 PRD 作为后续 Agent 的**输入上下文**：
 - Design Agent 根据 PRD 中的用户画像、用户故事、功能清单进行 UI/UX 设计。

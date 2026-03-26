@@ -26,3 +26,6 @@ workflow: _templates/coding-guide-workflow.md
 ## 资源
 1. 场景路由表：`references/coding-scenario-map.md`
 2. 规则索引：`rules/dotnet-desktop/index.md`
+
+## 输出要求（MUST）
+- 按 `agents/protocols/execution-trace.md` 格式，在输出末尾附执行追溯摘要（调用 Skill、任务类型、加载规则、跨域规则、跨域联动）。

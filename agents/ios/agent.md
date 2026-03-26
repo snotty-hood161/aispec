@@ -35,6 +35,11 @@
 - UIKit profile：`rules/ios/profiles/uikit/`
 - 跨域规则：`rules/frontend-backend-collaboration.md`（涉及远程 API 时）
 
+## 关联 Protocols
+- 交接协议：`agents/protocols/handoff.md`
+- 输出格式：`agents/protocols/agent-output-format.md`
+- 执行追溯：`agents/protocols/execution-trace.md`
+
 ## 任务识别
 以下关键词/特征表明任务属于本 Agent：
 - iOS、Swift、SwiftUI、UIKit、Xcode

@@ -39,6 +39,11 @@
   - `release-rollback-record-template.md` — 发布回滚记录
 - 跨域仲裁：`rules/index.md`
 
+## 关联 Protocols
+- 交接协议：`agents/protocols/handoff.md`
+- 输出格式：`agents/protocols/agent-output-format.md`
+- 执行追溯：`agents/protocols/execution-trace.md`
+
 ## 任务识别
 以下关键词/特征表明任务属于本 Agent：
 - 前后端联调、接口契约、错误码映射、灰度发布

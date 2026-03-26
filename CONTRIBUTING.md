@@ -5,7 +5,7 @@
 ## 项目结构
 
 ```
-aistandard/
+aispec/
 ├── rules/     ← 规则层（唯一规则真源）
 ├── skills/    ← 能力层（AI 执行入口）
 └── agents/    ← 编排层（多 Agent 模式）

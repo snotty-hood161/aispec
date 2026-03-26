@@ -56,7 +56,7 @@
 - 提取任务中的技术关键词。
 - 使用 `skills/task-router/references/domain-detect-map.md` 映射到涉及的域。
 - 若无法确定域，向用户询问确认。
-- 识别任务类型：product / spec / design / coding / review / scaffold / rule-maintenance / security-audit / testing / devops。
+- 识别任务类型：product / spec / design / design-review / coding / review / scaffold / rule-maintenance / security-audit / testing / devops。
 
 ### 3. 制定执行计划
 - 当 Spec 和 Design 产出可用时，调用 `$task-planner` 将 Spec + Design 拆解为可执行任务清单。

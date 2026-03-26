@@ -19,3 +19,6 @@ workflow: _templates/project-scaffold-workflow.md
 ## 资源
 1. 脚手架映射：`references/scaffold-map.md`
 2. 规则文件：`rules/database/database.md`、`rules/database/data-migration.md`
+
+## 输出要求（MUST）
+- 按 `agents/protocols/execution-trace.md` 格式，在输出末尾附执行追溯摘要（调用 Skill、任务类型、加载规则、跨域规则、跨域联动）。

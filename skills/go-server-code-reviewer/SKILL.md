@@ -27,3 +27,6 @@ workflow: _templates/code-reviewer-workflow.md
 1. 检查规则清单：`references/check-rules.md`
 2. 报告输出格式：`skills/_templates/report-format-template.md`
 3. PR 评审清单（参考）：`rules/templates/go-server/pr-review-checklist.md`
+
+## 输出要求（MUST）
+- 按 `agents/protocols/execution-trace.md` 格式，在输出末尾附执行追溯摘要（调用 Skill、任务类型、加载规则、跨域规则、跨域联动）。

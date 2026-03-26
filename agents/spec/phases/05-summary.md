@@ -11,7 +11,7 @@
 - 错误码引用必须在被调用方的错误码清单中存在。
 
 ### 5.2 数据结构一致性检查
-- 跨模块引用的实体（如订单模块引用用户 ID）必须使用相同的类型和约束。
+- 跨模块引用的实体（如订单模块引用用户 ID）必须使用相同的逻辑类型和业务约束。
 - DTO 中引用的外部实体字段必须在源模块中存在。
 - 枚举值定义在引用方和定义方之间保持一致。
 
@@ -68,8 +68,8 @@
 
 | 文档 | 内容 | 格式 |
 |------|------|------|
-| 项目级 Spec | 系统目标、技术选型、全局约束 | 按 `templates/project-spec-template.md` |
-| 模块级 Spec × N | 每个模块的 12 维度详细定义 | 按 `templates/module-spec-template.md` |
+| 项目级 Spec | 系统目标、技术选型、全局约束 | 按 `agents/spec/templates/project-spec-template.md` |
+| 模块级 Spec × N | 每个模块的 12 维度详细定义 | 按 `agents/spec/templates/module-spec-template.md` |
 | 模块依赖图 | 模块间依赖关系可视化 | 文本/Mermaid 图 |
 | 技术决策记录 | 所有 ADR 的汇总 | ADR 格式 |
 | 风险清单 | 已识别风险及缓解方案 | 表格 |
@@ -102,10 +102,15 @@ Spec Agent 完成后，将以下信息交接给 Coordinator：
 ```
 
 Coordinator 基于此摘要调度后续域 Agent：
-1. Database Agent — 根据各模块的数据结构 Spec 设计 Schema。
+1. Database Agent — 根据各模块的逻辑数据模型，通过 `$database-coding-guide` 设计物理 Schema（遵循 `rules/database/database.md`）。
 2. GoServer / DotnetServer / PythonServer / JavaServer / NodeServer Agent — 根据 API 接口 Spec 实现服务端。
 3. Collaboration Agent — 根据 API Spec 校验前后端契约。
 4. 客户端 Agent — 根据模块 Spec + API 契约实现前端/移动端。
+
+### 单体模式衔接
+在单体模式下（无 Coordinator），Spec 输出完成后必须明确告知用户：
+1. 下一步使用 `$database-coding-guide` 将逻辑数据模型转化为物理 Schema。
+2. 然后使用对应服务端的 `*-coding-guide` 实现 API 接口。
 
 ## 输出约束
 1. 所有输出使用中文。

@@ -13,7 +13,7 @@
 - Skill 内部按场景路由表加载规则并执行。
 
 ### 3. 跨域交接
-- 按域 agent.md 声明的 `handoff` 规则执行交接：
+- 按 `agents/protocols/handoff.md` 定义的交接协议，结合域 agent.md 声明的交接规则执行：
   - 需要数据库 Schema 变更 → 交接给 Database Agent。
   - 需要 API 契约变更 → 交接给 Collaboration Agent。
   - 规则冲突 → 上报 Coordinator Agent。

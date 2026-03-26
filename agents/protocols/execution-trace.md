@@ -13,7 +13,7 @@
 |------|------|
 | 模式 | 单体模式 |
 | 调用 Skill | {skill 名称，如 $go-server-coding-guide} |
-| 任务类型 | {coding / review / scaffold / rule-maintenance} |
+| 任务类型 | {product / spec / design / design-review / coding / review / scaffold / rule-maintenance / security-audit / testing / devops} |
 | 加载规则 | {本次实际加载的规则文件列表，如 baseline.md, api-design.md, error-handling.md} |
 | 跨域规则 | {如涉及跨域，列出跨域规则文件；无则写"无"} |
 | 跨域联动 | {如需其他域配合，说明建议；无则写"无"} |
